@@ -149,5 +149,15 @@ namespace EntityFramework_CodeFirst_Datagrid
                 }
             }
         }
+
+        private void txtbx_search_GotFocus(object sender, RoutedEventArgs e)
+        {
+            this.txtbx_search.Text = "";
+        }
+
+        private void txtbx_search_LostFocus(object sender, RoutedEventArgs e)
+        {
+            this.txtbx_search.Text = "Search...";
+        }
     }
 }
