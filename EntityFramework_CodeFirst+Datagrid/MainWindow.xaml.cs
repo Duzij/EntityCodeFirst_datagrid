@@ -87,6 +87,9 @@ namespace EntityFramework_CodeFirst_Datagrid
         {
             dataGrid2.Visibility = Visibility.Hidden;
             dataGrid.Visibility = Visibility.Visible;
+            dataGrid2.IsEnabled = false;
+            dataGrid.IsEnabled = true;
+
             foreach (Order order in this.MyOrders.Set<Order>())
             {
             }
@@ -101,6 +104,9 @@ namespace EntityFramework_CodeFirst_Datagrid
         {
             dataGrid2.Visibility = Visibility.Visible;
             dataGrid.Visibility = Visibility.Hidden;
+            dataGrid2.IsEnabled = true;
+            dataGrid.IsEnabled = false;
+
             foreach (SpecialOrder special_order in this.MyOrders.Set<SpecialOrder>())
             {
             }

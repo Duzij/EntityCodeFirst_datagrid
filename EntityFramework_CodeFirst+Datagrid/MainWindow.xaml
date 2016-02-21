@@ -28,6 +28,6 @@
         <DataGrid x:Name="dataGrid" FontSize="16" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"></DataGrid>
         <DataGrid x:Name="dataGrid2" FontSize="16" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" IsSynchronizedWithCurrentItem="True"></DataGrid>
         <Button x:Name="SaveButton" Content="Save" FontWeight="Normal" FontSize="18.667" Cursor="Hand" Click="SaveButton_Click" Grid.Column="2" Grid.Row="1" Margin="10,0,10,5"/>
-        <TextBox x:Name="txtbx_search" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="0,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Search by order number" VerticalAlignment="Top" Width="139" KeyDown="textBox_KeyDown"/>
+        <TextBox x:Name="txtbx_search" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="0,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Search..." VerticalAlignment="Top" Width="139" KeyDown="textBox_KeyDown" GotFocus="txtbx_search_GotFocus" LostFocus="txtbx_search_LostFocus"/>
     </Grid>
 </Controls:MetroWindow>
